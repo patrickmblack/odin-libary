@@ -44,6 +44,7 @@ function addLibraryToPage(){
         const bookReadStatus = document.createElement('p')
         if (book.readBool){
             bookReadStatus.textContent = 'Have read!'
+            card.classList.add('read')
         }else{
             bookReadStatus.textContent = 'Have not read.'
         }

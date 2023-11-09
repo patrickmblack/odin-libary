@@ -1,3 +1,9 @@
+:root{
+    --bookread: rgb(240, 255, 249);
+    --booknotread: rgb(255, 240, 240);
+}
+
+
 #content{
     resize: both;
     display: grid;
@@ -8,13 +14,20 @@
     width: fit-content;
     height: fit-content;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .card{
     text-align: center;
     font-size: 1.5rem;
     padding: 12px;
-    background-color: aliceblue;
     border: 1px solid black;
+    background-color: var(--booknotread);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.read{
+    background-color: var(--bookread);
 }
