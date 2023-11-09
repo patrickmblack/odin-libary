@@ -1,5 +1,6 @@
 const myLibrary = [] // Array of book objects
 
+const contentContainer = document.querySelector('#content')
 
 function Book(title, author, pageNumber, readBool){
     this.title = title;
